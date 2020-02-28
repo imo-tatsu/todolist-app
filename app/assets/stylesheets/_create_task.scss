@@ -1,0 +1,85 @@
+.create_task{
+  height: 100vh;
+  width: 50%;
+  float: left;
+
+  &__header{
+    height: 70px;
+    background-color: seagreen;
+    font-weight: bold;
+    align-items: center;
+    &__box{
+      height: 30px;
+      display: flex;
+      background-color:seagreen;
+      position: relative;
+      top: 20px;
+      &__name{
+        color: white;
+        font-size: 30px;
+        position: absolute;
+        left: 100px;
+      }
+    }
+  }
+  &__text{
+    height: calc(100vh - 70px);
+    background-color: #2f3e51;
+    color: white;
+    padding: 20px 20px 0px;
+    &__search{
+      height: 40vh;
+      width: 35vw;
+      margin: 0px 50px;
+      &__form{
+        height: 40vh;
+        width: 35vw;
+        background-color: white;;
+        position: absolute;
+      }
+    }
+  }
+  .input-box{
+    display: flex;
+    &__text{
+      height: 30vh;
+      width: 35vw;
+    }
+  }
+  .input-btn{
+    position: relative;
+    &__submit{
+      position: absolute;
+      left: 300px;
+      top: 20px;
+      cursor: pointer;
+    }
+  }
+
+  &__group{
+    height: 40vh;
+    width: 35vw;
+    background-color: white;
+    position: absolute;
+    bottom: 50px;
+    margin: 0px 50px;
+    &__form{
+      height: 40vh;
+      width: 35vw;
+      .group-input-box{
+        display: flex;
+        &__text{
+          height: 30vh;
+          width: 35vw;
+        }
+      }
+      .grouo-input-btn{
+        position: relative;
+        &__submit{
+          position: absolute;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
