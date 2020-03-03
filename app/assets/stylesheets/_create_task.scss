@@ -24,7 +24,7 @@
   }
   &__text{
     height: calc(100vh - 70px);
-    background-color: #2f3e51;
+    background-color:white;
     color: white;
     padding: 20px 20px 0px;
     &__search{
@@ -73,7 +73,7 @@
           width: 35vw;
         }
       }
-      .grouo-input-btn{
+      .group-input-btn{
         position: relative;
         &__submit{
           position: absolute;

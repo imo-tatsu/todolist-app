@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  root to: 'messages#index'
+  devise_for :users
+  # root to: 'messages#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :messages, only: :index
+  # resources :messages, only: :index
+  root "messages#index"
+  resources :users, only: [:edit, :update, ]
 end

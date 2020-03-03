@@ -6,16 +6,17 @@
   .create_task__text
     .create_task__text__search
       .create_task__text__search__form
-        = form_for @messages do |f|
-          .input-box
-            = f.text_field  :text , class: 'input-box__text', placeholder: 'type a message'
-          .input-btn
-            = f.submit '検索', class: 'input-btn__submit'
+        入力フォーム
+        -# = form_for @messages do |f|
+        -#   .input-box
+        -#     = f.text_field  :text , class: 'input-box__text', placeholder: 'type a message'
+        -#   .input-btn
+        -#     = f.submit '検索', class: 'input-btn__submit'
     .create_task__group
       .create_task__group__form
-        = form_for @messages do |f|
-          .group-input-box
-            = f.text_field  :text , class: 'group-input-box__text', placeholder: 'type a message'
-          .group-input-btn
-            = f.submit '作成', class: 'group-input-btn__submit'
+        -# = form_for @messages do |f|
+        -#   .group-input-box
+        -#     = f.text_field  :text , class: 'group-input-box__text', placeholder: 'type a message'
+        -#   .group-input-btn
+        -#     = f.submit '作成', class: 'group-input-btn__submit'
     
